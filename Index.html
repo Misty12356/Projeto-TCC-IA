@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>POC Gemini (Seguro) — Texto + Voz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🧠 POC Gemini (Seguro) — Texto + Voz</h1>
+
+    <!-- Tags de Segurança (Informação Visual) -->
+    <div class="tags">
+        <span class="tag">🔒 API Key no servidor (Vercel)</span>
+        <span class="tag">🔒 Prompt no servidor (Vercel)</span>
+        <span class="tag">🎙️ pt-BR / pt-PT</span>
+    </div>
+
+    <h3>📝 Pergunta</h3>
+    <textarea id="campo-pergunta" placeholder="Digite aqui... (ou use voz)"></textarea>
+
+    <div class="botoes">
+        <button id="btn-enviar">🚀 Enviar</button>
+        <button id="btn-br">🎙️ pt-BR</button>
+
+    <button id="btn-pt">🎙️ pt-PT</button>
+        <button id="btn-parar">⛔ Parar</button>
+    </div>
+
+    <h3>📊 Relatório Estratégico</h3>
+    <div id="relatorio-saida" class="painel-resposta">
+        <!-- Onde a resposta da IA vai aparecer -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
