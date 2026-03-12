@@ -1,82 +1,98 @@
-/* Configuração Geral: Define a fonte e as cores de fundo */
+/* Configurações Globais - Estilo Dark Neon */
 body {
+    background-color: #0d1117; /* Fundo escuro padrão GitHub/VSCode */
+    color: #00f2ff; /* Ciano Neon */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6;
-    color: #333;
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto; /* Centraliza o projeto na tela */
-}
-
-/* Estilo do Título Principal */
-h1 {
-    color: #2c3e50;
-    text-align: center;
-}
-
-/* Estilo das Tags de Segurança (o topo do site) */
-.tags {
     display: flex;
-    gap: 10px;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h1, h3 {
+    text-shadow: 0 0 10px #00f2ff, 0 0 20px #00f2ff; /* Efeito de brilho neon */
+    color: #fff;
+}
+
+/* Tags de Status */
+.tags {
     margin-bottom: 20px;
 }
 
 .tag {
-    background-color: #e8ecef;
-    padding: 5px 12px;
+    background: #161b22;
+    border: 1px solid #00f2ff;
+    color: #00f2ff;
+    padding: 5px 10px;
     border-radius: 15px;
-    font-size: 0.85em;
-    font-weight: bold;
-    border: 1px solid #d1d8dd;
+    font-size: 0.8em;
+    margin: 0 5px;
+    box-shadow: 0 0 5px #00f2ff;
 }
 
-/* Estilo da Caixa de Texto (Perguntas) */
+/* Área de Input (Pergunta) */
 textarea {
-    width: 100%;
+    width: 90%;
+    max-width: 600px;
     height: 120px;
-    padding: 15px;
-    border: 2px solid #ddd;
+    background-color: #161b22;
+    border: 2px solid #58a6ff;
     border-radius: 10px;
+    color: #fff;
+    padding: 15px;
     font-size: 16px;
-    resize: none; /* Impede o usuário de mudar o tamanho e quebrar o layout */
-    box-sizing: border-box; /* Garante que o preenchimento não aumente a largura total */
+    outline: none;
+    transition: 0.3s;
 }
 
-/* Estilo do Grupo de Botões */
-.botoes {
+textarea:focus {
+    border-color: #00f2ff;
+    box-shadow: 0 0 15px #00f2ff;
+}
+
+/* Botões */
+.botões {
+    margin-top: 20px;
     display: flex;
-    flex-wrap: wrap; /* Faz os botões pularem de linha em telas pequenas */
     gap: 10px;
-    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     font-weight: bold;
-    transition: background 0.3s; /* Deixa a mudança de cor suave ao passar o mouse */
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
 }
 
-/* Cores específicas para cada botão */
-#btn-enviar { background-color: #3498db; color: white; }
-#btn-enviar:hover { background-color: #2980b9; }
+#btn-enviar {
+    background-color: #00f2ff;
+    color: #000;
+    box-shadow: 0 0 10px #00f2ff;
+}
 
-#btn-br, #btn-pt { background-color: #2ecc71; color: white; }
-#btn-br:hover, #btn-pt:hover { background-color: #27ae60; }
+#btn-enviar:hover {
+    background-color: #fff;
+    box-shadow: 0 0 20px #fff;
+}
 
-#btn-parar { background-color: #e74c3c; color: white; }
-#btn-parar:hover { background-color: #c0392b; }
+#btn-parar {
+    background-color: #ff0055;
+    color: #fff;
+    box-shadow: 0 0 10px #ff0055;
+}
 
-/* O Painel onde a IA responde (Relatório Estratégico) */
-.painel-resposta {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
+/* Painel de Resposta (Relatório Estratégico) */
+#relatorio-saida {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 600px;
     min-height: 150px;
-    margin-top: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
+    background-color: #161b22;
+    border-
+
